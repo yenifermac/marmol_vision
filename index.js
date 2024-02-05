@@ -1,12 +1,16 @@
 const { Console } = require('console');
 const express = require('express');
 const path = require('path');
-const myAPI = require('./router/index.js');
+const routerAPI = require('./server/router');
+
+//el cors sirve para quitar el problema de cors y permitir que se conecten  dispositivos desde cualquier origin"ip"
+app.use(cors());
+
 
 const app = express();
 app.use(express.json());
 
-myAPI(app);
+routerAPI(app);
 
 app.get('/', (req,res)=>{
     res.end("Hola mundo");

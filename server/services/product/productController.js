@@ -1,4 +1,4 @@
-const materailesArreglo = require('../../db/ejercicio.js');
+const materailesArreglo = require('../../../db/ejercicio.js');
 
 
 function agregarProducto(req) {
