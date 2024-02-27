@@ -37,9 +37,11 @@ router.post('/', (req, res) => {
   console.log(req.body)
   controller.addUser(req.body)
     .then((data) => {
-      res.status(201).json(data);
+      response.success(req, res, data , 201);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      response.error(req, res, 'Interal Error', 500, err)
+    });
 });
 
 //TODO: add después del post de register

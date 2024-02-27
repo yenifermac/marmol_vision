@@ -3,10 +3,12 @@ const express = require('express');
 //expres tiene un metodo que funciona como enrutador para enlazar todas nuestras rutas de nuestra aplicacion  (localhost:3000)
 const router = express.Router();
 const productos = require('../services/product/router.js');
+const users = require('../services/user/router.js');
 
 function routerAPI(application) {
-    application.use('/api', router);
-    router.use('/productos',  productos);
+    application.use('/api/v1', router);
+    router.use('/products',  productos),
+    router.use('/users',  users);
     
 }
 

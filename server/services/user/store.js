@@ -18,7 +18,14 @@ async function getOnlyUser(id) {
   return getOnlyUser.data();
 
 }
-
+/* 
+user={
+  fullName: "",
+  userName: "",
+  email: "",
+  password: "", = hash (aasdggghgz*70)
+}
+ */
 async function createUser(user) {
   const docRef = db.collection('usuarios');
   return await docRef.add(user)

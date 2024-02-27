@@ -1,35 +1,67 @@
-const materailesArreglo = require('../../../db/ejercicio.js');
+const store = require('./store.js');
 
 
-function agregarProducto(req) {
+function addProduct(product) {
   return new Promise((resolve, reject) => {
-      const nuevoProducto = req.body;
       
-      if(!nuevoProducto){
+      
+      if(!product){
         return reject("Campo vacioo");
       } 
-      if (nuevoProducto){
-        materailesArreglo.push(nuevoProducto);
-          resolve("Producto agregado exitosamente");
+      if (product){
+        const newProduct = {
+          name: product.name,
+          type: product.type,
+          color: product.color,
+          texture:product.texture
+        }
+          store.add(newProduct);
+          resolve(newProduct);
       }    
   })
 }
 
-function obtenerProductos() {
+
+
+function listProducts() {
   return new Promise((resolve, reject) => {
-      if(materailesArreglo){
-          resolve(materailesArreglo);
-      } else {
-          reject("No hay productos disponibles");
-      }
+    resolve(store.getAllProducts());
   })
+}
+
+function updateProductData(id, productData){
+  return new Promise((resolve, reject)=>{
+     if(!id){
+      reject('El id proporcionado es inválido o no existe.')
+     }
+     if(!productData || Object.keys(productData).length === 0){
+      reject('Los datos del producto proporcionados son inválidos o están vacíos.')
+     }
+    resolve(store.updateProduct(id, productData));
+  });
+}
+
+function deleteProducts(id){
+  return new Promise((resolve, reject)=>{
+
+    resolve(store.delete(id));
+
+  })
+
+
+
 }
 
 
 
+
+
 module.exports ={
-  agregarProducto:agregarProducto,
-  obtenerProductos: obtenerProductos
+  addProduct,
+  listProducts,
+  updateProductData,
+  deleteProducts
+
 }
 
 
