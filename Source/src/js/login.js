@@ -35,7 +35,7 @@ form.addEventListener('submit', (event) => {
             message,
             error
           } = response;
-          if (message) return window.location.pathname = '/';
+          if (message) return window.location.pathname = '/side-menu-light-dashboard-overview-1';
           if (error) {
 
             alertElement2.classList.add( 'text-black', 'p-2', 'w-80', 'text-center', 'ml-6');

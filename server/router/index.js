@@ -4,11 +4,13 @@ const express = require('express');
 const router = express.Router();
 const productos = require('../services/product/router.js');
 const users = require('../services/user/router.js');
+const orders = require('../services/order/router.js')
 
 function routerAPI(application) {
     application.use('/api/v1', router);
     router.use('/products',  productos),
     router.use('/users',  users);
+    router.use('/orders',  orders);
     
 }
 

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "marmolvision-7e497",
+  "private_key_id": "36044110ba78ddb8317d2c4b7a6b547b1abff9ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCgHyjAnFmzhXsk\ngcG82pbN7ZFt3ds6zyeZFoKyK+hpKKrDWi5WjmEkPwTZ3QrhaymZuDKp09Z+MPGT\no9NezvooPjYlxFjA3ur011SzppNQ2dHZuojbMSj4Xnu4UcxgGGqV/sYkPEfKaqRI\n/rk1v3rMzhAgf0W2j/4+7uCL5PS12+TwtKBmMXcsJD2rdCdpzSiFju+onWPWCAPH\nQop+4pbpVcFVQSDrwCrNC58h7aprguG00rT5VSUQn8CN5tlWTFSraA5ZnNbFC4fQ\nl2l1LltZpDHmxVZdN14OAbGctVcOnrDa/+JjfkV2+LPrRztG2sKXI0ap1PRXkHhP\nErk2+l6vAgMBAAECggEAPQDyDUPkFvW1X0jCT5m2F7m5jPKX6hVvYC9H1urMjnfs\nayXp/pcbImySBBDnas9hl4uqXbJ0BzrNZvLk/jt76iYdihD+wWiMeoCpaBKAEK8T\n+NBNALl/gvS4TRZ492mF/iSFR9vhfBhaA+dsF7KebfXaBg+HN1Evy7lFunad1sTY\nZmma6Ec/fSYAFRJUwcCZ907RxLc3GhNbbTRkTT5n0IyP97y+7TX8Fq0Bx4ZJZfCt\nFeDJFtg1wJZ6OIadpe4Uc+3WvVADa107+zkNJqN3kwYq4b/j99p2OXvlGGuOip8Y\n8CDnASpE4ucRlAZVH3eKeiF9DS483KsV4DLifnq60QKBgQDP5O13OO62uOj6NPVs\n/fLQS43KVBe8jl1/vzzUD26g+9mXe//JiQD3nPgLnuKJAUsxhqv6iX/In8mMOQEn\n/qYHO3NFhd6dDYYjGhvE2/1/QKlqA7JmROVUooLwY5Pwh1CAy/9UJ6LDrXOdtnK3\nJEb7aQZM0xqF6ofJTYUWsbCD3wKBgQDFLFIYSUu3FxvwQSulO5gIGdfghcBrf1Bw\nTyivbmURVD2z2EDeN5kvJtEtxEg5LHlD/v0628NKEdIRv53NeIX0qt8g6yxr5Ar0\nYy18e155CgID5J/fTFgwEE9Aj6neA6Qh2IJxfoOVIfeWHu5KXKc6ePHInN+JRi5X\nljZ5Cer/MQKBgCrWQRgP4yBDeb4Uq32J1j6VUuId8cYoj5uDDEWl6GXDf1J3en1M\nfaaH8ZRzaLpSSewqk8VMD8iHJECAfnx/PDbBST9KFlTGNJ2HA7HMoq9V45K0sE3i\nZF7MHa7q1dD6ENx5LGNqx18Knogg0AJstzOWsHWkChMOAGy6THIgqv6BAoGAYU2r\n/dw+B07aNMiUl2g/cNAAHwcinGop8iK+e0TJj7G4+YXhDUj2ybQoSqOw2LY/6fRu\nV5uYVndQ6f1cDMhLoyCoGIC2XVAer9g53FKtnqH3uKAc3X+5jY6e7cd4Ft5JI4LL\nbOL4YKJwop8FDaGHzW1eNJhmIEKIICU7IKRqWiECgYEAw4uI9k6p9z+VXO/KDf+m\naopbcpjdxlkuGFj9g3PcZNE37bUIL9ODUVKXzmX8fdXT26sYn1nQ5v0hgpLG000L\nXmbjP+mePG2+BMIQBPNnaJFjAKyoXo5BqI0/Ozv4J9v0E+JsjgvrAKW0Te+xl6yk\nx9/nitEXVhRc40wjE+fWMIo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-m2yyu@marmolvision-7e497.iam.gserviceaccount.com",
+  "client_id": "107999208931701827204",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-m2yyu%40marmolvision-7e497.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

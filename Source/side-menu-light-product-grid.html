@@ -12,14 +12,14 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- BEGIN: Head -->
     <head>
         <meta charset="utf-8">
-        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <link href="/dist/images/logo.svg" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Icewall admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
         <meta name="keywords" content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
         <meta name="author" content="LEFT4CODE">
         <title>Productos</title>
         <!-- BEGIN: CSS Assets-->
-        <link rel="stylesheet" href="dist/css/app.css" />
+        <link rel="stylesheet" href="./dist/css/app.css" />
         <!-- END: CSS Assets-->
     </head>
     <!-- END: Head -->
@@ -899,7 +899,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </a>
                             <ul class="side-menu__sub-open">
                                 <li>
-                                    <a href="side-menu-light-dashboard-overview-1.html" class="side-menu side-menu--active">
+                                    <a href="side-menu-light-dashboard-overview-1" class="side-menu side-menu--active">
                                         <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
                                         <div class="side-menu__title"> Inicio </div>
                                     </a>
@@ -1017,7 +1017,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </h2>
                     <div class="grid grid-cols-12 gap-6 mt-5">
                         <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-                            <button class="btn btn-primary shadow-md mr-2">Agregar nuevo producto</button>
+                            <a href="side-menu-light-add-product.html" class="btn btn-primary shadow-md mr-2">Agregar nuevo producto</a>
                             <div class="dropdown">
                                 <button class="dropdown-toggle btn px-2 box" aria-expanded="false" data-tw-toggle="dropdown">
                                     <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
@@ -1045,24 +1045,33 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                         </div>
                         <!-- BEGIN: Users Layout -->
-                        <div class="intro-y col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
+<!--                         <div class="col-span-12 w-full" id="container-list-product">
+                        </div> -->
+                        
+
+                            <div  id="container-list-product"  class="intro-y flex flex-col md:flex-row lg:flex-col xl:flex-row gap-6">
+    
+                                
+                            </div>
+
+                        
+                        <!-- <div class="intro-y col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                             <div class="box">
                                 <div class="p-5">
                                     <div class="h-40 2xl:h-56 image-fit rounded-md overflow-hidden before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-10 before:bg-gradient-to-t before:from-black before:to-black/10">
-                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="dist/images/preview-7.jpg">
-                                        <span class="absolute top-0 bg-pending/80 text-white text-xs m-5 px-2 py-1 rounded z-10">Featured</span> 
-                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Dell XPS 13</a> <span class="text-white/90 text-xs mt-3">PC &amp; Laptop</span> </div>
+                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="./src/images/granito-leona.jpg">
+                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Granito</a> <span class="text-white/90 text-xs mt-3">Leona</span> </div>
                                     </div>
                                     <div class="text-slate-600 dark:text-slate-500 mt-5">
-                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Price: $168 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Remaining Stock: 68 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Status: Active </div>
+                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Pricio: $215 </div>
+                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Cantidad </div>
+                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Estado: Inactivo </div>
                                     </div>
                                 </div>
                                 <div class="flex justify-center lg:justify-end items-center p-5 border-t border-slate-200/60 dark:border-darkmode-400">
-                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Preview </a>
-                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Ver </a>
+                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Editar </a>
+                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Eliminar </a>
                                 </div>
                             </div>
                         </div>
@@ -1070,19 +1079,20 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="box">
                                 <div class="p-5">
                                     <div class="h-40 2xl:h-56 image-fit rounded-md overflow-hidden before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-10 before:bg-gradient-to-t before:from-black before:to-black/10">
-                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="dist/images/preview-2.jpg">
-                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Dell XPS 13</a> <span class="text-white/90 text-xs mt-3">PC &amp; Laptop</span> </div>
+                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="./src/images/cuarzo-rosado.jpg">
+                                        <span class="absolute top-0 bg-pending/80 text-white text-xs m-5 px-2 py-1 rounded z-10"></span> 
+                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Cuarzo</a> <span class="text-white/90 text-xs mt-3">Rosado</span> </div>
                                     </div>
                                     <div class="text-slate-600 dark:text-slate-500 mt-5">
-                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Price: $215 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Remaining Stock: 105 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Status: Inactive </div>
+                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Pricio: $36 </div>
+                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Cantidad: 50 </div>
+                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Estado: Activo </div>
                                     </div>
                                 </div>
                                 <div class="flex justify-center lg:justify-end items-center p-5 border-t border-slate-200/60 dark:border-darkmode-400">
-                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Preview </a>
-                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Ver</a>
+                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Editar </a>
+                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i>Eliminar</a>
                                 </div>
                             </div>
                         </div>
@@ -1090,41 +1100,20 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="box">
                                 <div class="p-5">
                                     <div class="h-40 2xl:h-56 image-fit rounded-md overflow-hidden before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-10 before:bg-gradient-to-t before:from-black before:to-black/10">
-                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="dist/images/preview-14.jpg">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="./src/images/marmol-negro.jpg">
                                         <span class="absolute top-0 bg-pending/80 text-white text-xs m-5 px-2 py-1 rounded z-10">Featured</span> 
-                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Nike Tanjun</a> <span class="text-white/90 text-xs mt-3">Sport &amp; Outdoor</span> </div>
+                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Marmol</a> <span class="text-white/90 text-xs mt-3">Negro</span> </div>
                                     </div>
                                     <div class="text-slate-600 dark:text-slate-500 mt-5">
-                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Price: $36 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Remaining Stock: 50 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Status: Active </div>
+                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Pricio: $40 </div>
+                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i>Cantidad:2 </div>
+                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Estado:Activo</div>
                                     </div>
                                 </div>
                                 <div class="flex justify-center lg:justify-end items-center p-5 border-t border-slate-200/60 dark:border-darkmode-400">
-                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Preview </a>
-                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="intro-y col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
-                            <div class="box">
-                                <div class="p-5">
-                                    <div class="h-40 2xl:h-56 image-fit rounded-md overflow-hidden before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-10 before:bg-gradient-to-t before:from-black before:to-black/10">
-                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="dist/images/preview-10.jpg">
-                                        <span class="absolute top-0 bg-pending/80 text-white text-xs m-5 px-2 py-1 rounded z-10">Featured</span> 
-                                        <div class="absolute bottom-0 text-white px-5 pb-6 z-10"> <a href="" class="block font-medium text-base">Nike Tanjun</a> <span class="text-white/90 text-xs mt-3">Sport &amp; Outdoor</span> </div>
-                                    </div>
-                                    <div class="text-slate-600 dark:text-slate-500 mt-5">
-                                        <div class="flex items-center"> <i data-lucide="link" class="w-4 h-4 mr-2"></i> Price: $40 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Remaining Stock: 72 </div>
-                                        <div class="flex items-center mt-2"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Status: Active </div>
-                                    </div>
-                                </div>
-                                <div class="flex justify-center lg:justify-end items-center p-5 border-t border-slate-200/60 dark:border-darkmode-400">
-                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Preview </a>
-                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center text-primary mr-auto" href="javascript:;"> <i data-lucide="eye" class="w-4 h-4 mr-1"></i> Ver </a>
+                                    <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Editar </a>
+                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i>Eliminar</a>
                                 </div>
                             </div>
                         </div>
@@ -1293,7 +1282,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- END: Users Layout -->
                         <!-- BEGIN: Pagination -->
                         <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
@@ -1342,6 +1331,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
         <script src="dist/js/app.js"></script>
+        <script type="module" src="./src/js/getProduct.js"></script>
         <!-- END: JS Assets-->
     </body>
 </html>

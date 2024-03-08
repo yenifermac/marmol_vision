@@ -13,7 +13,8 @@ function addProduct(product) {
           name: product.name,
           type: product.type,
           color: product.color,
-          texture:product.texture
+          surface: product.surface,
+         
         }
           store.add(newProduct);
           resolve(newProduct);
@@ -51,10 +52,6 @@ function deleteProducts(id){
 
 
 }
-
-
-
-
 
 module.exports ={
   addProduct,

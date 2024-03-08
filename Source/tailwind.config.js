@@ -100,6 +100,13 @@ module.exports = {
                 1.5: 1.5,
                 2.5: 2.5,
             },
+            gridTemplateColumns: {
+                // Define cuántas columnas quieres en tu cuadrícula
+                '2': 'repeat(2, minmax(0, 1fr))',
+                '3': 'repeat(3, minmax(0, 1fr))',
+                '4': 'repeat(4, minmax(0, 1fr))',
+                '5': 'repeat(5, minmax(0, 1fr))',
+            },
         },
     },
     plugins: [require("@tailwindcss/forms")],
@@ -109,3 +116,5 @@ module.exports = {
         },
     },
 };
+
+

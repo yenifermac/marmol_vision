@@ -8,10 +8,14 @@ const form = document.getElementById("form")
             fullname: event.target.fullname.value,
             username: event.target.username.value,
             email: event.target.email.value,
-            password: event.target.password.value
+            password: event.target.password.value,
+           
         }
         createUser(data)
-        .then((usuarioCreado)=>{console.log(usuarioCreado);})
+        .then((usuarioCreado)=>{
+            window.location.pathname = '/login';
+            
+            console.log(usuarioCreado);})
         .catch((err) => console.log(err))
         
     })

@@ -3,11 +3,11 @@ const apiFetchProduct = "http://localhost:3000/api/v1";
 
 async function createProduct(product){
 
-    response = await fetch(`${apiFetchProduct}/product`,{
+    const response = await fetch(`${apiFetchProduct}/products/create`,{
         method: 'POST',
         headers:{
             'Content-Type': 'application/json',
-            'Accep': 'application/json'
+            'Accept': 'application/json'
         },
         body: JSON.stringify(product),
     });

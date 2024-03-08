@@ -14,7 +14,7 @@ function addUser(user) {
     
     const newUser = {
       fullname: user.fullname,
-      name: user.name,
+      username: user.username,
       email: user.email,
       password: hash
     }
